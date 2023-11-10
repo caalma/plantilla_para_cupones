@@ -87,5 +87,6 @@ merger.write(f'../{arc_pdf_final}')
 merger.close()
 
 # borrar carpeta temporal
-chdir('../')
-rmtree(ruta, True)
+if borrar_temporales:
+    chdir('../')
+    rmtree(ruta, True)
