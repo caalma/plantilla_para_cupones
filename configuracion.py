@@ -1,6 +1,6 @@
 # seteos de personalización para generación y numeración de documento final
 
-total_items = 131
+total_items = 3000
 cantidad_por_pagina = 15
 
 arc_plantilla = 'plantilla.svg'
