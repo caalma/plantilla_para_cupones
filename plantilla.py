@@ -14,10 +14,12 @@ from configuracion import *
 ruta = './tmp/'
 inkscape_executable = 'inkscape'
 pla = open(arc_plantilla, 'r').read()
-total = total_items
+itmini = item_inicial
+itmfin = item_final
+total = itmfin - itmini
 ppag = cantidad_por_pagina
-lst = range(1, total+1)
-pad_ceros = len(str(total))
+lst = range(itmini, itmfin+1)
+pad_ceros = len(str(itmfin))
 lista = list(lst[i:i+ppag] for i in range(0, len(lst), ppag))
 codigos_de_reemplazo = [
     '__A__',
